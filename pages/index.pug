@@ -1,0 +1,18 @@
+extends templates/_layout
+
+block append page-params
+	-
+		title='Example Main Page';
+
+
+block header
+	h1=title
+	img(Src='/static/mountain-view.jpg')
+
+block content
+	p Replace me with real content.
+	p: a(href='/subpage.html') Here's a sub-page.
+	P: a(href='/subpage-path/') Here's a sub-page built another way.
+
+block footer
+	//-remove a block from an extending template entirely by declaring it, and then giving it no content

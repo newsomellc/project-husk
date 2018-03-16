@@ -1,0 +1,26 @@
+//-This is where all the main layout for the page goes.
+block page-params
+	-
+		var title='Default page title';
+
+html
+	head
+		block title
+			title=title
+
+		block styles
+			link(rel='stylesheet' href='/css/stylesheet.css')
+	body
+		block body
+			block header
+				header
+					h1 Default page header
+
+			block content
+				section
+					p Default content here.
+					P This comes from /pages/templates/_layout.pug
+
+			block footer
+				footer
+					a(href='/') Back to root

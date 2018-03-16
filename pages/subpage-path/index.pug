@@ -1,0 +1,16 @@
+extends ../templates/_layout
+
+block append page-params
+	-
+		title='Subpage at path.'
+
+block append styles
+	//-nothing wrong with a stylesheet set up for a sub-page
+	link(rel='stylesheet' href='/subpage-path/subpage.css')
+
+block header
+	h1 Subpage at a path.
+
+block content
+	p When you want a page to exist at the root of a folder (as in, without a .html extension), make a new directory and place an index.pug file inside.
+	p Just like PHP!

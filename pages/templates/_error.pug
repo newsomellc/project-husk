@@ -1,0 +1,14 @@
+extends _layout
+
+block append styles
+	link(rel='stylesheet' href='/css/error.css')
+
+block content
+	block header
+		h2.header-boxed=error.status
+		p.header-boxed=(message||error.message)
+
+
+	block fold
+		if (error.stack)
+			pre #{error.stack}
