@@ -6,8 +6,43 @@ block append page-params
 
 
 block header
-  h1=title
-  img(Src='/static/mountain-view.jpg')
+  div(class='container')
+    div(class='white row' id='topHeaderImage')
+      div(class='col-md-6')
+        span(id='title') TNLand.com
+        span(id='tagline') Tennessee Land, Lots & Acreage For Sale
+      div(class='col-md-6')
+        span(id='phone') 1-888-777-5758
+    
+    nav(class='navbar navbar-expand-lg' id='navbarMain')
+      a(class="navbar-brand" href="#") FREE Land Guide
+        p PRICES, LISTINGS & MORE...
+
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+
+      div(class="collapse navbar-collapse" id="navbarNavDropdown")
+        ul(class="navbar-nav")
+          li(class="nav-item active")
+            a(class="nav-link" href="#") Home 
+              span(class="sr-only">Current)
+
+          li(class="nav-item")
+            a(class="nav-link" href="#") Features
+
+          li(class="nav-item")
+            a(class="nav-link" href="#") Pricing
+
+          li(class="nav-item dropdown")
+            a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown link
+
+            div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
+              a(class="dropdown-item" href="#") Action
+              a(class="dropdown-item" href="#") Another action
+              a(class="dropdown-item" href="#") Something else here
+
+  //- h1=title
+  //- img(Src='/static/mountain-view.jpg')
 
 block content
   div(class='container')
@@ -38,19 +73,19 @@ block footer
           h4(class='noMargin') LAND FEATURES
           a(href='http://www.tnland.com/acrerage/') Acreage 
           a(href='http://www.tnland.com/features/bluffs/') Bluff 
-          a(href='#') Brow Property 
-          a(href='#') Creek 
-          a(href='#') Horse Property 
-          a(href='#') Hunting Land 
-          a(href='#') Mountain Views 
-          a(href='#') on sale 
-          a(href='#') Pasture Land 
-          a(href='#') Privacy 
-          a(href='#') Rock Formations 
-          a(href='#') Sold 
-          a(href='#') Video 
-          a(href='#') Waterfront 
-          a(href='#') Wooded Land
+          a(href='http://www.tnland.com/features/brow-property/') Brow Property 
+          a(href='http://www.tnland.com/features/creeks/') Creek 
+          a(href='http://www.tnland.com/features/horse-property/') Horse Property 
+          a(href='http://www.tnland.com/features/hunting-land/') Hunting Land 
+          a(href='http://www.tnland.com/features/view/') Mountain Views 
+          a(href='http://www.tnland.com/features/on-sale/') on sale 
+          a(href='http://www.tnland.com/features/pasture/') Pasture Land 
+          a(href='http://www.tnland.com/features/privacy/') Privacy 
+          a(href='http://www.tnland.com/features/rocks/') Rock Formations 
+          a(href='http://www.tnland.com/features/sold/') Sold 
+          a(href='http://www.tnland.com/features/video/') Video 
+          a(href='http://www.tnland.com/features/waterfront/') Waterfront 
+          a(href='http://www.tnland.com/features/woods/') Wooded Land
 
         div(class='col-md-4')
           div(class='row')
