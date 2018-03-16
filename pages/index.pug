@@ -8,78 +8,82 @@ block append page-params
 block header
   h1=title
   img(Src='/static/mountain-view.jpg')
-  ul
-    li First
-    li Second
 
 block content
-  p=textStuff
-  p: a(href='/subpage.html') Here's a sub-page.
-  p: a(href='/subpage-path/') Here's a sub-page built another way.
-  div(class='btn') Test
+  div(class='container')
+    p=textStuff
+    p: a(href='/subpage.html') Here's a sub-page.
+    p: a(href='/subpage-path/') Here's a sub-page built another way.
+    ul
+      li First
+      li Second
 
 block footer
-  div(class='container footerDiv')
-    div(class='row white')
-      div(class='col-md-4')
-        h4(class='noMargin') TN LAND
-        a(href='http://www.tnland.com/land-guide/') Order Your FREE Guide to Tennessee's Most Affordable Land!
-        hr
-        a(href='http://www.tnland.com/about-tnland/') About TNLand.com
-        hr
-        a(href='http://www.tnland.com/contact/') Contact TNLand.com  
+  div(id='footerMain')
+    div(class='container footerDiv')
+      div(class='row white')
+        div(class='col-md-4')
+          h4(class='noMargin') TN LAND
+          a(href='http://www.tnland.com/land-guide/') Order Your FREE Guide to Tennessee's Most Affordable Land!
+          hr
+          a(href='http://www.tnland.com/about-tnland/') About TNLand.com
+          hr
+          a(href='http://www.tnland.com/contact/') Contact TNLand.com  
+          hr
+          a(href='http://www.tnland.com/privacy/') TNLand.com Privacy Policy
+          hr
+          a(href='https://www.jasperhighlands.com/') A Beautiful Gated Mountain Community in Southeast Tennessee
 
-      div(class='col-md-4')
-        h4(class='noMargin') LAND FEATURES
-        a(href='http://www.tnland.com/acrerage/') Acreage 
-        a(href='#') Bluff 
-        a(href='#') Brow Property 
-        a(href='#') Creek 
-        a(href='#') Horse Property 
-        a(href='#') Hunting Land 
-        a(href='#') Mountain Views 
-        a(href='#') on sale 
-        a(href='#') Pasture Land 
-        a(href='#') Privacy 
-        a(href='#') Rock Formations 
-        a(href='#') Sold 
-        a(href='#') Video 
-        a(href='#') Waterfront 
-        a(href='#') Wooded Land
+        div(class='col-md-4')
+          h4(class='noMargin') LAND FEATURES
+          a(href='http://www.tnland.com/acrerage/') Acreage 
+          a(href='http://www.tnland.com/features/bluffs/') Bluff 
+          a(href='#') Brow Property 
+          a(href='#') Creek 
+          a(href='#') Horse Property 
+          a(href='#') Hunting Land 
+          a(href='#') Mountain Views 
+          a(href='#') on sale 
+          a(href='#') Pasture Land 
+          a(href='#') Privacy 
+          a(href='#') Rock Formations 
+          a(href='#') Sold 
+          a(href='#') Video 
+          a(href='#') Waterfront 
+          a(href='#') Wooded Land
 
-      div(class='col-md-4')
-        div(class='row')
-          h4(class='noMargin') SHARE THIS PAGE
-          div(class='col-md-12 icons')
-            a(href="#") 
-              i(class='fa fa-facebook-square fa-3x')
-            a(href="#")
-              i(class='fa fa-tumblr-square fa-3x')    
-            a(href="#")
-              i(class='fa fa-twitter-square fa-3x')
-            a(href="#")
-              i(class='fa fa-google-plus-square fa-3x')     
+        div(class='col-md-4')
+          div(class='row')
+            h4(class='noMargin') SHARE THIS PAGE
+            div(class='col-md-12 icons')
+              a(href="#") 
+                i(class='fa fa-facebook-square fa-3x')
+              a(href="#")
+                i(class='fa fa-tumblr-square fa-3x')    
+              a(href="#")
+                i(class='fa fa-twitter-square fa-3x')
+              a(href="#")
+                i(class='fa fa-google-plus-square fa-3x')     
 
-        div(class='row spacing')
-          h4(class='noMargin') STAY IN TOUCH  
-          div(class='col-md-12 icons')
-            a(href="https://www.facebook.com/JasperHighlands") 
-              i(class='fa fa-facebook-square fa-3x')
-            a(href="https://www.instagram.com/jasper_highlands/")
-              i(class='fa fa-instagram fa-3x')    
-            a(href="https://www.youtube.com/channel/UCUQ0lXoLpLH_M1AutFA4xyg")
-              i(class='fa fa-youtube-square fa-3x') 
+          div(class='row spacing')
+            h4(class='noMargin') STAY IN TOUCH  
+            div(class='col-md-12 icons')
+              a(href="https://www.facebook.com/JasperHighlands") 
+                i(class='fa fa-facebook-square fa-3x')
+              a(href="https://www.instagram.com/jasper_highlands/")
+                i(class='fa fa-instagram fa-3x')    
+              a(href="https://www.youtube.com/channel/UCUQ0lXoLpLH_M1AutFA4xyg")
+                i(class='fa fa-youtube-square fa-3x') 
 
-    div(class='row footerBottom')
-      div(class='col-md-6')
-        a(href='#') ^ Return to Top 
+      div(class='row footerTopBottom')
+        div(class='col-md-6')
+          a(id='returnWhite' href='#') ^ Return to Top 
 
-      div(class='col-md-6')
-        p(class='noMargin floatRight') TN Land Realty, LLC, Broker
-        br
-        p(class='noMargin floatRight') Proudly Created by 
-          a(href='http://www.landsalelistings.com/') LandSaleListings®  
-
-      br      
+        div(class='col-md-6')
+          p(class='noMargin floatRight') TN Land Realty, LLC, Broker
+          br
+          p(class='noMargin floatRight') Proudly Created by 
+            a(href='http://www.landsalelistings.com/') LandSaleListings®  
+   
 
   //-remove a block from an extending template entirely by declaring it, and then giving it no content
