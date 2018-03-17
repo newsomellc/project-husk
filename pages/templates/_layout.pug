@@ -1,28 +1,33 @@
 //-This is where all the main layout for the page goes.
 block page-params
-	-
-		//var title='Default page title';
+  -
+    //var title='Default page title';
 
 html
-	head
-		link(rel='icon' href='/static/favicon.ico')
-		meta(charset="utf-8")
-		block title
-			title=title
+  head
+    link(rel='icon' href='/static/favicon.ico')
+    meta(charset="utf-8")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
 
-		block styles
-			link(rel='stylesheet' href='/css/stylesheet.css')
-	body
-		block body
-			block header
-				header
-					h1 Default page header
 
-			block content
-				section
-					p Default content here.
-					P This comes from /pages/templates/_layout.pug
+    block title
+      title=title
 
-			block footer
-				footer
-					a(href='/') Back to root
+    block styles
+      link(rel='stylesheet' href='/css/stylesheet.css')
+  body
+    block body
+      block header
+        header
+          h1 Default page header
+
+      block content
+        section
+          p Default content here.
+          P This comes from /pages/templates/_layout.pug
+
+      block footer
+        footer
+          a(href='/') Back to root

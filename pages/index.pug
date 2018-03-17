@@ -14,35 +14,36 @@ block header
       div(class='col-md-6')
         span(id='phone') 1-888-777-5758
     
-    nav(class='navbar navbar-expand-lg' id='navbarMain')
-      a(class="navbar-brand" href="#") FREE Land Guide
-        p PRICES, LISTINGS & MORE...
+    div(class='orange white row')
+      div(class='col-md-2 noPad margin-left')
+        a(class='navFontBig' href="http://www.tnland.com/land-guide/") FREE Land Guide
+          p(class='navFontSmall') Prices, Listings & More...
 
-      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
-        span(class="navbar-toggler-icon")
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Tennessee Land
+            p(class='navFontSmall') More Land and Acreage
 
-      div(class="collapse navbar-collapse" id="navbarNavDropdown")
-        ul(class="navbar-nav")
-          li(class="nav-item active")
-            a(class="nav-link" href="#") Home 
-              span(class="sr-only">Current)
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") See All Properties
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Land & Large Acreage
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Creek Properties
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Mountain Views
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Horse Properties
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Hunting Land
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Jasper Highlands        
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") Blue Rock Acreage 
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") The Ridges at Franklin Forest     
 
-          li(class="nav-item")
-            a(class="nav-link" href="#") Features
-
-          li(class="nav-item")
-            a(class="nav-link" href="#") Pricing
-
-          li(class="nav-item dropdown")
-            a(class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown link
-
-            div(class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink")
-              a(class="dropdown-item" href="#") Action
-              a(class="dropdown-item" href="#") Another action
-              a(class="dropdown-item" href="#") Something else here
-
-  //- h1=title
-  //- img(Src='/static/mountain-view.jpg')
 
 block content
   div(class='container')
