@@ -1,13 +1,20 @@
 @import "../../node_modules/bootstrap/scss/bootstrap"
 @import "../../node_modules/font-awesome/scss/font-awesome.scss"
 
-// body 
-// 	background : #000
-// 	color      : #fff
+$white : #ffffff
+$black : #000000
+$background : #f7f7f7
+$yellowLink : #ff4
+$orange : #D9A432
+$orangeDark : #c79530
+$darkShadow : #444
+$lightShadow : #333
+$grey : #ddd
+$green : #0B884A
 
 body
-  background: url(../static/open-field.jpg) no-repeat top left, #f7f7f7;
-  color                  : #000;
+  background: url(../static/open-field.jpg) no-repeat top left, $background;
+  color                  : $black
   font-family            : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size              : 18px;
   line-height            : 1.4
@@ -17,16 +24,16 @@ h1
 	color : rgba(200,225,125, 1)
 
 a
-	color : #ff4
+	color : $yellowLink
 
 a:active 	
-	color : #ff4
+	color : $yellowLink
 
 a:visited
-	color : #ff4
+	color : $yellowLink
 
 a:hover
-	color : #ff4
+	color : $yellowLink
 
 img
 	max-width : 100% 
@@ -38,26 +45,38 @@ img
   padding: 0px
 
 .spacing
-  margin-top: 20px    
+  margin-top: 20px 
+
+#mobile-landguide
+  background-color: $green     
+  overflow: auto
+  margin: 20px 15px 20px 15px
+  display: block
+  text-align: center
+  border-radius: 10px
+  color: $white !important
 
 #topHeaderImage
   background-image: url(../static/mountain-river-view-boots.jpg)
-  color: #fff
+  color: $white
 
 .dropdown-item:hover
-  color: #fff !important
-  background-color: #c79530 !important
-
+  color: $white !important
+  background-color: $orangeDark !important
 
 #navbarMain a  
   color: #fff !important
 
 #title
   display: block
-  font-size: 42px
+  font-size: 56px
+  font-family: Georgia, Times, 'Times New Roman', serif
+  font-weight: 400
+  line-height: 0.8
   font-variant: small-caps
-  text-shadow: 2px 2px 4px #444
+  text-shadow: 2px 2px 4px $darkShadow
   margin-left: 20px
+  margin-top: 10px
 
 #phone
   display: block
@@ -65,14 +84,14 @@ img
   font-style: italic
   font-weight: bold
   font-variant: small-caps
-  text-shadow: 2px 2px 4px #444
+  text-shadow: 2px 2px 4px $darkShadow
   float: right
 
 #tagline
   font-family: georgia
   font-variant: small-caps
   font-size: 1.4rem
-  text-shadow: 2px 2px 4px #333
+  text-shadow: 2px 2px 4px $lightShadow
   margin-left: 20px
 
 .navbar
@@ -81,7 +100,7 @@ img
 .navFontBig
   font-weight: bold
   line-height: 22px 
-  font-size: 15px
+  font-size: 14px !important
 
 .navFontSmall
   font-size: 10px  
@@ -89,18 +108,17 @@ img
 .noPad
   padding-left: 0px
   padding-right: 0px
-
-.margin-left
-  margin-left: 5px  
-
-.margin-right
-  margin-right: 5px  
+  margin-top: 10px 
+  margin-bottom: 5px
+  margin-left: 5px
+  margin-right: 5px
+  text-align: center
 
 #footerMain
-  background-color: #000
+  background-color: $black
 
 .footerDiv
-  color: #fff
+  color: $white
   padding-top: 25px
 
 .footerDiv h4
@@ -108,18 +126,21 @@ img
   margin-bottom: 10px  
 
 .white a 
-  color: #fff !important 
+  color: $white !important 
   font-size: 16px
 
+.white 
+  color: $white !important 
+
 .orange
-  background-color: #D9A432 !important
+  background-color: $orange !important
 
 #returnWhite
   color: #fff !important  
 
 hr
-  color: #ddd
-  border-top: 1px solid #ddd
+  color: $grey
+  border-top: 1px solid $grey
   margin-top: 10px
   margin-bottom: 10px
 

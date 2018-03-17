@@ -6,19 +6,23 @@ block append page-params
 
 
 block header
-  div(class='container')
+  div(class='container-fluid')
+    // The site title/banner at the top of the header.
     div(class='white row' id='topHeaderImage')
-      div(class='col-md-6')
+      div(class='col-md-8 col-sm-12')
         span(id='title') TNLand.com
         span(id='tagline') Tennessee Land, Lots & Acreage For Sale
-      div(class='col-md-6')
+      div(class='col-md-4 col-sm-12')
         span(id='phone') 1-888-777-5758
     
+    // The orange banner under the site title/banner.
     div(class='orange white row')
-      div(class='col-md-2 noPad margin-left')
+      // FREE Land Guide
+      div(class='col-md-2 noPad')
         a(class='navFontBig' href="http://www.tnland.com/land-guide/") FREE Land Guide
           p(class='navFontSmall') Prices, Listings & More...
 
+      // Tennessee Land
       div(class='col-md-2 dropdown noPad')
         a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
           span(class='navFontBig') Tennessee Land
@@ -27,24 +31,93 @@ block header
         div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
           a(class="dropdown-item" href="http://www.tnland.com/land")
             span(class="navFontBig") See All Properties
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/tn-acreage-for-sale/")
             span(class="navFontBig") Land & Large Acreage
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/features/creeks/")
             span(class="navFontBig") Creek Properties
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/features/view/")
             span(class="navFontBig") Mountain Views
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/features/horse-property/")
             span(class="navFontBig") Horse Properties
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/features/hunting-land/")
             span(class="navFontBig") Hunting Land
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/")
             span(class="navFontBig") Jasper Highlands        
-          a(class="dropdown-item" href="http://www.tnland.com/land")
+          a(class="dropdown-item" href="http://www.tnland.com/blue-rock/")
             span(class="navFontBig") Blue Rock Acreage 
-          a(class="dropdown-item" href="http://www.tnland.com/land")
-            span(class="navFontBig") The Ridges at Franklin Forest     
+          a(class="dropdown-item" href="http://www.tnland.com/ridges/")
+            span(class="navFontBig") The Ridges at Franklin Forest
 
+      // Land Specials!
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Land Specials!
+            p(class='navFontSmall') Featured Land on Sale
 
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/specials/")
+            span(class="navFontBig") All Land Specials
+          a(class="dropdown-item" href="http://www.tnland.com/weekends/")
+            span(class="navFontBig") Land Sale Weekends - Sign Up!
+
+      // Jasper Highlands
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Jasper Highlands
+            p(class='navFontSmall') Mountain Community
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/")
+            span(class="navFontBig") About Jasper Highlands
+          a(class="dropdown-item" href="http://www.tnland.com/blog/jasper/")
+            span(class="navFontBig") News & Updates
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/photo-book/")
+            span(class="navFontBig") Photo Book
+          a(class="dropdown-item" href="http://www.tnland.com/house-plans/")
+            span(class="navFontBig") House Plans
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/parks-and-trails/")
+            span(class="navFontBig") Parks & Trails
+          a(class="dropdown-item" href="http://www.tnland.com/weekends-jh/")
+            span(class="navFontBig") Land Sale Weekends - Sign Up!
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/discover/")
+            span(class="navFontBig") Visit and Discover Jasper Highlands       
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/watch-jasper/")
+            span(class="navFontBig") Watch Jasper Highlands Videos
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/raulston-falls/")
+            span(class="navFontBig") Raulston Waterfall
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/kimball-falls/")
+            span(class="navFontBig") Kimball Waterfall  
+
+      // The Fence Post
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') The Fence Post
+            p(class='navFontSmall') Land News & How-To's
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/blog/")
+            span(class="navFontBig") Latest Fence Post
+          a(class="dropdown-item" href="http://www.tnland.com/blog/jasper/")
+            span(class="navFontBig") Jasper Highlands      
+          a(class="dropdown-item" href="http://www.tnland.com/blog/nature/")
+            span(class="navFontBig") Let's Talk Nature    
+          a(class="dropdown-item" href="http://www.tnland.com/blog/outdoors/")
+            span(class="navFontBig") Jasper Outdoors   
+          a(class="dropdown-item" href="http://www.tnland.com/blog/news/")
+            span(class="navFontBig") Land News   
+
+      // Contact Us
+      div(class='col-md-2 noPad')
+        a(class='navFontBig' href="http://www.tnland.com/contact/") Contact Us
+          p(class='navFontSmall') Send us a message...      
+
+    // On Mobile, display the offer for Free Tennesse Land Guide
+    div(class='row')
+      div(id='mobile-landguide' class='container col-sm-12 col-xs-12 d-md-none')
+        a(class='white' href='http://www.tnland.com/land-guide/') FREE - Order a Tennessee Land Guide
+        p: a(class='white' href='http://www.tnland.com/land-guide/') (A full color guide with property descriptions and prices)
+
+// Middle Content of the Site
 block content
   div(class='container')
     p=textStuff
