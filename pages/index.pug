@@ -1,18 +1,392 @@
 extends templates/_layout
 
 block append page-params
-	-
-		title='Example Main Page';
-
+  -
+    title='Tennessee Land For Sale at TN Land';
 
 block header
-	h1=title
-	img(Src='/static/mountain-view.jpg')
+  div(class='container')
+    // The site title/banner at the top of the header.
+    div(class='white row' id='topHeaderImage')
+      div(class='col-md-8 col-sm-12')
+        span(id='title') TNLand.com
+        span(id='tagline') Tennessee Land, Lots & Acreage For Sale
+      div(class='col-md-4 col-sm-12')
+        span(id='phone') 1-888-777-5758
+    
+    // The orange banner under the site title/banner.
+    div(class='orange white row')
+      // FREE Land Guide
+      div(class='col-md-2 noPad')
+        a(class='navFontBig' href="http://www.tnland.com/land-guide/") FREE Land Guide
+          p(class='navFontSmall') Prices, Listings & More...
 
+      // Tennessee Land
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Tennessee Land
+            p(class='navFontSmall') More Land and Acreage
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/land")
+            span(class="navFontBig") See All Properties
+          a(class="dropdown-item" href="http://www.tnland.com/tn-acreage-for-sale/")
+            span(class="navFontBig") Land & Large Acreage
+          a(class="dropdown-item" href="http://www.tnland.com/features/creeks/")
+            span(class="navFontBig") Creek Properties
+          a(class="dropdown-item" href="http://www.tnland.com/features/view/")
+            span(class="navFontBig") Mountain Views
+          a(class="dropdown-item" href="http://www.tnland.com/features/horse-property/")
+            span(class="navFontBig") Horse Properties
+          a(class="dropdown-item" href="http://www.tnland.com/features/hunting-land/")
+            span(class="navFontBig") Hunting Land
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/")
+            span(class="navFontBig") Jasper Highlands        
+          a(class="dropdown-item" href="http://www.tnland.com/blue-rock/")
+            span(class="navFontBig") Blue Rock Acreage 
+          a(class="dropdown-item" href="http://www.tnland.com/ridges/")
+            span(class="navFontBig") The Ridges at Franklin Forest
+
+      // Land Specials!
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Land Specials!
+            p(class='navFontSmall') Featured Land on Sale
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/specials/")
+            span(class="navFontBig") All Land Specials
+          a(class="dropdown-item" href="http://www.tnland.com/weekends/")
+            span(class="navFontBig") Land Sale Weekends - Sign Up!
+
+      // Jasper Highlands
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') Jasper Highlands
+            p(class='navFontSmall') Mountain Community
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/")
+            span(class="navFontBig") About Jasper Highlands
+          a(class="dropdown-item" href="http://www.tnland.com/blog/jasper/")
+            span(class="navFontBig") News & Updates
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/photo-book/")
+            span(class="navFontBig") Photo Book
+          a(class="dropdown-item" href="http://www.tnland.com/house-plans/")
+            span(class="navFontBig") House Plans
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/parks-and-trails/")
+            span(class="navFontBig") Parks & Trails
+          a(class="dropdown-item" href="http://www.tnland.com/weekends-jh/")
+            span(class="navFontBig") Land Sale Weekends - Sign Up!
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/discover/")
+            span(class="navFontBig") Visit and Discover Jasper Highlands       
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/watch-jasper/")
+            span(class="navFontBig") Watch Jasper Highlands Videos
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/raulston-falls/")
+            span(class="navFontBig") Raulston Waterfall
+          a(class="dropdown-item" href="http://www.tnland.com/jasper/kimball-falls/")
+            span(class="navFontBig") Kimball Waterfall  
+
+      // The Fence Post
+      div(class='col-md-2 dropdown noPad')
+        a(href="#" id="dropdownMenuLand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
+          span(class='navFontBig') The Fence Post
+            p(class='navFontSmall') Land News & How-To's
+
+        div(class="dropdown-menu orange white" aria-labelledby="dropdownMenuLand")
+          a(class="dropdown-item" href="http://www.tnland.com/blog/")
+            span(class="navFontBig") Latest Fence Post
+          a(class="dropdown-item" href="http://www.tnland.com/blog/jasper/")
+            span(class="navFontBig") Jasper Highlands      
+          a(class="dropdown-item" href="http://www.tnland.com/blog/nature/")
+            span(class="navFontBig") Let's Talk Nature    
+          a(class="dropdown-item" href="http://www.tnland.com/blog/outdoors/")
+            span(class="navFontBig") Jasper Outdoors   
+          a(class="dropdown-item" href="http://www.tnland.com/blog/news/")
+            span(class="navFontBig") Land News   
+
+      // Contact Us
+      div(class='col-md-2 noPad')
+        a(class='navFontBig' href="http://www.tnland.com/contact/") Contact Us
+          p(class='navFontSmall') Send us a message...      
+
+    // On Mobile, display the offer for Free Tennesse Land Guide
+    div(class='row')
+      div(id='mobile-landguide' class='container col-sm-12 col-xs-12 d-md-none')
+        a(class='white' href='http://www.tnland.com/land-guide/') FREE - Order a Tennessee Land Guide
+        p: a(class='white' href='http://www.tnland.com/land-guide/') (A full color guide with property descriptions and prices)
 block content
-	p Replace me with real content.
-	p: a(href='/subpage.html') Here's a sub-page.
-	P: a(href='/subpage-path/') Here's a sub-page built another way.
+  div(class='container' id='mainContent')
+    // Separate out the page into 8/4 columns for Bootstrap
+    div(class='row')
+      // Left Side of the Page
+      div(class='col-md-8 col-lg-8')
+        // Featured Locations
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center')
+          a(href='http://www.tnland.com/land/homesite-for-sale-next-to-a-waterfall/')
+            img(class='img img-responsive shadow' src='http://cdn.tnland.com/wp-content/uploads/2013/08/jh148-water-fall.jpg')
+            b
+              p(class='contentText') Beautiful Tennessee Mountain Homesite Next to a Waterfall
+
+        // Jasper Highlands
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center left-border')
+          img(class='img img-responsive' src='http://cdn3.tnland.com/wp-content/uploads/2015/04/JH-catskill.jpg')
+          p A beautiful gated mountain community with spacious mountain homesites, river views, waterfalls, creeks, and trails - 
+            b
+              a(href='https://www.jasperhighlands.com/' class='contentText') Jasper Highlands
+
+        // Sunsets
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/tn-land-for-sale-sunset-views/')
+                p(class='contentText') Tennessee Land For Sale With Incredible Sunset...
+          img(class='img img-responsive shadow' src='http://cdn.tnland.com/wp-content/uploads/2014/08/br2-mtns-land-pasture-tn.jpg')    
+          p This incredible, and very private 40 acres features a variety of natural mountain features and would make a great …
+            a(href='http://www.tnland.com/land/tn-land-for-sale-sunset-views/') 
+              span(class='orangeText') [Read More...]
+
+        // Over 180 Acres of TN Mtn Land With...
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/large-tennessee-acreage-character/')
+                p(class='contentText') Over 180 Acres Of Tennessee Mountain Land With…
+          img(class='img img-responsive shadow' src='http://cdn.tnland.com/wp-content/uploads/2014/08/br1-clouds-mtns.jpg')    
+          p This large acreage Tennessee mountain property has it all. Incredible sunsets, deep forest, rolling pasture, and unique rock …
+            a(href='http://www.tnland.com/land/large-tennessee-acreage-character/') 
+              span(class='orangeText') [Read More...]
+
+        // The Perfect Land For A Hunting Lodge..
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/large-acreage-hunting-land/')
+                p(class='contentText') The Perfect Land For A Hunting Lodge Or Cabin Retreat
+          img(class='img img-responsive shadow' src='http://cdn3.tnland.com/wp-content/uploads/2012/08/tract9-tn-mountain-views-356x200.jpg')    
+          p In terms of natural features, location and aesthetics, simply put, Tract 9 in The Ridges at Franklin Forest has it all. ...
+            a(href='http://www.tnland.com/land/large-acreage-hunting-land/') 
+              span(class='orangeText') [Read More...]   
+
+        // 313 Acre Hunting or Horse Property
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/hunting-land-big-acreage/')
+                p(class='contentText') 313 Acre Hunting Or Horse Property
+          img(class='img img-responsive shadow' src='http://cdn.tnland.com/wp-content/uploads/2012/08/tract8-mountain-valley-view-356x200.jpg')    
+          p This 313 (+/-) acre section of Tennessee mountain property has it all. The southern and much of the western …
+            a(href='http://www.tnland.com/land/hunting-land-big-acreage/') 
+              span(class='orangeText') [Read More...]     
+
+        // Tennessee Mountain Land With..
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/tennessee-mountain-land-lots-privacy/')
+                p(class='contentText') Tennessee Mountain Land With Lots Of Privacy…
+          img(class='img img-responsive shadow' src='http://cdn3.tnland.com/wp-content/uploads/2016/07/rb127-mtn-view-356x200.jpg')    
+          p This Tennessee mountain land for sale is for those looking for privacy and plenty of space around the home site. One has …
+            a(href='http://www.tnland.com/land/tennessee-mountain-land-lots-privacy/') 
+              span(class='orangeText') [Read More...]  
+
+        // Homesite with Back Door Wooded..
+        div(class='col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 inline center bottom-border')
+          i
+            b
+              a(href='http://www.tnland.com/land/wooded-privacy-creek-and-meadows/')
+                p(class='contentText') Homesite With Back Door Wooded Privacy, Creek, And Meadows…
+          img(class='img img-responsive shadow' src='http://cdn.tnland.com/wp-content/uploads/2014/02/jh102-creek-tennessee-property.jpg')    
+          p This Jasper Highlands homesite has a bit of a slope from the road back to a really nice meandering …
+            a(href='http://www.tnland.com/land/wooded-privacy-creek-and-meadows/') 
+              span(class='orangeText') [Read More...]                 
+
+        // Smaller Article Links Row 1
+        div(class='row')
+          div(class='col-lg-6 col-xl-6 col-md-6 col-sm-6 col-xs-6 inline marginTweak bottom-border marginBot')
+            a(class='contentText bold' href='http://www.tnland.com/land/large-acreage-beautiful-valley-views/')
+              img(class='img img-responsive shadow alignleft' src='http://cdn.tnland.com/wp-content/uploads/2014/08/br3-tn-mtns-trees-120x120.jpg')    
+              p 80+ Acres Of Mountain Property With Beautiful Valley...
+
+          div(class='col-lg-6 col-xl-6 col-md-6 col-sm-6 col-xs-6 inline marginTweak bottom-border marginBot')
+            a(class='contentText bold' href='http://www.tnland.com/land/large-acreage-mountain-views-creeks/')
+              img(class='img img-responsive shadow alignleft' src='http://cdn3.tnland.com/wp-content/uploads/2012/08/tract10-mountain-bluff-120x120.jpg')    
+              p 420 Acres With Mountain Views, Creeks, And Wooded Privacy
+
+        // Smaller Article Links Row 2
+        div(class='row')
+          div(class='col-lg-6 col-xl-6 col-md-6 col-sm-6 col-xs-6 inline marginTweak bottom-border marginBot')
+            a(class='contentText bold' href='http://www.tnland.com/land/tellico-lake-property/')
+              img(class='img img-responsive shadow alignleft' src='http://cdn2.tnland.com/wp-content/uploads/2012/09/tp17-tellico-lake-smoky-mountains-120x120.jpg')    
+              p 2-Acre Dockable Tellico Lake…
+
+          div(class='col-lg-6 col-xl-6 col-md-6 col-sm-6 col-xs-6 inline marginTweak bottom-border marginBot')
+            a(class='contentText bold' href='http://www.tnland.com/land/secluded-tn-mountain-acreage-views-wooded-privacy/')
+              img(class='img img-responsive shadow alignleft' src='http://cdn3.tnland.com/wp-content/uploads/2015/01/br4-valley-view-120x120.jpg')    
+              p Secluded Tennessee Mountain Acreage With Views And Wooded Privacy     
+
+
+        // THIS IS THE FINAL PART OF THE LEFT PAGE
+        // Discover Jasper Ad
+        div(class='col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 marginTweak')
+          a(href='http://www.tnland.com/jasper/')
+            img(class='img img-responsive' src='http://cdn2.tnland.com/wp-content/uploads/2013/03/jasper-highlands-discover-splashb.jpg')      
+
+      // The Right Side of the Page!
+      div(class='col-md-4 col-lg-4 col-sm-12 col-xs-12 center left-border')   
+        // Free Guide
+        div(class='col-lg-12 col-xl-12 d-none d-md-block' id='ribbonAd')
+          img(class='img img-responsive' src='http://www.tnland.com/wp-content/themes/tnland1140/images/home/land-guide-short-formd.png')
+
+        // Low Taxes
+        div(class='col-lg-12 col-xl-12 marginTweak')
+          p
+            span(class='bold') TN Land 
+            span offers beautiful Tennessee land for sale with majestic views, creeks and waterfalls! Most of our land and acreage for sale are large mountain tracts and home sites located near Chattanooga and Sewanee Tennessee. These properties offer great country living without being too far away… Also&nbsp;
+            span(class='bold') Tennessee has no state income tax and low property taxes!
+
+        // Free Land Guide Ad
+        div(class='col-lg-12 col-xl-12 marginTweak')
+          img(class='img img-responsive' src='http://cdn3.tnland.com/wp-content/uploads/2016/07/land-guide-ad.jpg')
+
+        // LATEST FROM THE FENCE POST
+        div(class='col-lg-12 col-xl-12 marginTweak')
+          p LATEST FROM THE FENCE POST
+
+          // Successful Spring at Jasper
+          div(class='bottom-border marginTweak')
+            img(class='img img-responsive' src='http://cdn2.tnland.com/wp-content/uploads/2017/04/blog-2017-spring-view-feature-300x100.jpg')
+            p(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/blog/successful-spring-at-jasper-highlands/') A Successful Spring At Jasper Highlands
+            p The Spring season at Jasper Highlands has started with a bang! Folks from all around the country have chosen to visit … 
+              a(href='http://www.tnland.com/blog/successful-spring-at-jasper-highlands/') 
+                  span(class='orangeText') [Read More...]  
+
+          // Jasper Highlands Fire Department
+          div(class='bottom-border')
+            img(class='img img-responsive' src='http://cdn2.tnland.com/wp-content/uploads/2016/11/blog-featured-firetruck-300x100.jpg')
+            p(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/blog/jasper-highlands-fire-department-gets-best-rating-marion-county/') Jasper Highlands Fire Department Gets Best Rating In Marion County
+            p Local / Chattanooga Times Free Press One of the region's newest volunteer fire departments has achieved the best fire … 
+              a(href='http://www.tnland.com/blog/jasper-highlands-fire-department-gets-best-rating-marion-county/') 
+                  span(class='orangeText') [Read More...]  
+
+        // MOST RECENT LAND
+        div(class='col-lg-12 col-xl-12 marginTweak')
+          p MOST RECENT LAND
+
+          // Over 6 Acres With Wooded Privacy And Creek
+          div(class='bottom-border marginTweak')
+            img(class='img img-responsive inline alignleft' height='100px' width='100px' src='http://cdn2.tnland.com/wp-content/uploads/2017/06/rb228-181a-mountain-creek-120x120.jpg')
+            span(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/land/6-acres-wooded-privacy-creek/') Over 6 Acres With Wooded Privacy And Creek
+            p This Tennessee mountain property has …
+              a(href='http://www.tnland.com/land/6-acres-wooded-privacy-creek/') 
+                  span(class='orangeText') [Read More...]  
+
+          // Bluff Front...
+          div(class='bottom-border marginTweak')
+            img(class='img img-responsive inline alignleft' height='100px' width='100px' src='http://cdn3.tnland.com/wp-content/uploads/2017/03/sv107-mtn-view-100x100.jpg')
+            span(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/land/bluff-front-homesite-beautiful-views-rock-formations/') Bluff Front Homesite With Beautiful Views And Rock Formations
+            p Scenic sunsets can be enjoyed from this  …
+              a(href='http://www.tnland.com/land/bluff-front-homesite-beautiful-views-rock-formations/') 
+                  span(class='orangeText') [Read More...]          
+
+          // Level Mtn Homesite
+          div(class='bottom-border marginTweak')
+            img(class='img img-responsive inline alignleft' height='100px' width='100px' src='http://cdn.tnland.com/wp-content/uploads/2017/03/sv106-mtn-valley-view-100x100.jpg')
+            span(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/land/level-mountain-homesite-rock-formations-scenic-long-range-views/') Level Mountain Homesite With Rock Formations And Scenic Long Range Views
+            p The views from this bluff front …
+              a(href='http://www.tnland.com/land/level-mountain-homesite-rock-formations-scenic-long-range-views/') 
+                  span(class='orangeText') [Read More...]    
+
+          // Scenic Mtn Homesite
+          div(class='bottom-border marginTweak')
+            img(class='img img-responsive inline alignleft' height='100px' width='100px' src='http://cdn3.tnland.com/wp-content/uploads/2017/02/sv169-mountain-view-100x100.jpg')
+            span(class='bold')
+              i 
+                a(class='contentText' href='http://www.tnland.com/land/scenic-mountain-homesite-incredible-bluff-views/') Scenic Mountain Homesite With Incredible Bluff Views
+            p Located on the western bluff of the … 
+              a(href='http://www.tnland.com/land/scenic-mountain-homesite-incredible-bluff-views/') 
+                  span(class='orangeText') [Read More...]                
+        
+
+
+
 
 block footer
-	//-remove a block from an extending template entirely by declaring it, and then giving it no content
+  div(id='footerMain')
+    div(class='container footerDiv')
+      div(class='row white')
+        div(class='col-md-4')
+          h4(class='noMargin') TN LAND
+          a(href='http://www.tnland.com/land-guide/') Order Your FREE Guide to Tennessee's Most Affordable Land!
+          hr
+          a(href='http://www.tnland.com/about-tnland/') About TNLand.com
+          hr
+          a(href='http://www.tnland.com/contact/') Contact TNLand.com  
+          hr
+          a(href='http://www.tnland.com/privacy/') TNLand.com Privacy Policy
+          hr
+          a(href='https://www.jasperhighlands.com/') A Beautiful Gated Mountain Community in Southeast Tennessee
+
+        div(class='col-md-4')
+          h4(class='noMargin') LAND FEATURES
+          a(href='http://www.tnland.com/acrerage/') Acreage 
+          a(href='http://www.tnland.com/features/bluffs/') Bluff 
+          a(href='http://www.tnland.com/features/brow-property/') Brow Property 
+          a(href='http://www.tnland.com/features/creeks/') Creek 
+          a(href='http://www.tnland.com/features/horse-property/') Horse Property 
+          a(href='http://www.tnland.com/features/hunting-land/') Hunting Land 
+          a(href='http://www.tnland.com/features/view/') Mountain Views 
+          a(href='http://www.tnland.com/features/on-sale/') on sale 
+          a(href='http://www.tnland.com/features/pasture/') Pasture Land 
+          a(href='http://www.tnland.com/features/privacy/') Privacy 
+          a(href='http://www.tnland.com/features/rocks/') Rock Formations 
+          a(href='http://www.tnland.com/features/sold/') Sold 
+          a(href='http://www.tnland.com/features/video/') Video 
+          a(href='http://www.tnland.com/features/waterfront/') Waterfront 
+          a(href='http://www.tnland.com/features/woods/') Wooded Land
+
+        div(class='col-md-4')
+          div(class='row')
+            h4(class='noMargin') SHARE THIS PAGE
+            div(class='col-md-12 icons')
+              a(href="#") 
+                i(class='fa fa-facebook-square fa-3x')
+              a(href="#")
+                i(class='fa fa-tumblr-square fa-3x')    
+              a(href="#")
+                i(class='fa fa-twitter-square fa-3x')
+              a(href="#")
+                i(class='fa fa-google-plus-square fa-3x')     
+
+          div(class='row spacing')
+            h4(class='noMargin') STAY IN TOUCH  
+            div(class='col-md-12 icons')
+              a(href="https://www.facebook.com/JasperHighlands") 
+                i(class='fa fa-facebook-square fa-3x')
+              a(href="https://www.instagram.com/jasper_highlands/")
+                i(class='fa fa-instagram fa-3x')    
+              a(href="https://www.youtube.com/channel/UCUQ0lXoLpLH_M1AutFA4xyg")
+                i(class='fa fa-youtube-square fa-3x') 
+
+      div(class='row footerTopBottom')
+        div(class='col-md-6')
+          a(class='white' href='#') ^ Return to Top 
+
+        div(class='col-md-6')
+          p(class='noMargin floatRight') TN Land Realty, LLC, Broker
+          br
+          p(class='noMargin floatRight') Proudly Created by 
+            a(href='http://www.landsalelistings.com/') LandSaleListings®  
+   
+
+  //-remove a block from an extending template entirely by declaring it, and then giving it no content

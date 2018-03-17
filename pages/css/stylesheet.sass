@@ -1,21 +1,217 @@
-body 
-	background : #000
-	color      : #fff
+@import "../../node_modules/bootstrap/scss/bootstrap"
+@import "../../node_modules/font-awesome/scss/font-awesome.scss"
+
+$white : #ffffff
+$black : #000000
+$background : #f7f7f7
+$yellowLink : #ff4
+$orange : #D9A432
+$orangeDark : #c79530
+$darkShadow : #444
+$lightShadow : #333
+$grey : #ddd
+$green : #0B884A
+
+body
+  background: url(../static/open-field.jpg) no-repeat top left, $background;
+  color                  : $black
+  font-family            : 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size              : 18px;
+  line-height            : 1.4
+  -webkit-font-smoothing : antialiased
 
 h1 
 	color : rgba(200,225,125, 1)
 
-a
-	color : #ff4
+a 
+  color : $yellowLink
+  text-decoration: none
+  &:hover
+    color : $orange
+    text-decoration: none 
 
-a:active 	
-	color : #ff4
+.contentText
+  color : $black !important
+  text-decoration: none !important
+  margin: 5px
+  &:hover
+    color : $orange !important
+    text-decoration: none !important 
+  &a  
+    color: $black
 
-a:visited
-	color : #ff4
+.white a 
+  color: $white 
+  font-size: 16px
+  &:hover
+    color: $orange 
 
-a:hover
-	color : #ff4
+.white 
+  color: $white 
+
+.orange
+  background-color: $orange !important
+
+.orangeText
+  color: $orange  
+
+.shadow
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75)
+
+.center
+  text-align: center
+
+.left
+  text-align: left    
+
+.dropdown-item:hover
+  color: $white !important
+  background-color: $orangeDark !important  
+
+.navFontBig
+  font-weight: bold
+  line-height: 22px 
+  font-size: 14px !important
+  &:hover
+    color: $white !important
+
+.navFontSmall
+  font-size: 10px  
+  &:hover
+    color: $white !important  
 
 img
-	max-width : 100%
+	max-width : 100% 
+
+img-mobile
+  height: 90px
+  width: 70px  
+  margin-left: -5px
+  
+.fa 
+  margin-right: 5px  
+
+.icons
+  padding: 0px
+
+.spacing
+  margin-top: 20px 
+
+.bold
+  font-weight: bold
+
+.marginTweak
+  margin-bottom: 20px
+  margin-top: 20px  
+  text-align: center
+
+.left-border
+  border-left: 1px solid $grey 
+
+.bottom-border
+  border-bottom: 1px solid $grey
+
+.alignleft
+  float: left
+  text-align: left
+
+.marginBot
+  padding-bottom: 20px  
+
+#ribbonAd
+  position: relative
+  right: -50px
+  z-index: 99  
+
+#mainContent
+  background-color: $white  
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .2)
+  padding-top: 25px
+  padding-left: 25px
+  padding-bottom: 50px
+  margin-bottom: 50px
+
+.inline 
+  display: inline-block
+
+#mobile-landguide
+  background-color: $green     
+  overflow: auto
+  margin: 20px 15px 20px 15px
+  display: block
+  text-align: center
+  border-radius: 10px
+  color: $white !important
+
+#topHeaderImage
+  background-image: url(../static/mountain-river-view-boots.jpg)
+  background-size: cover
+  color: $white
+
+#navbarMain a  
+  color: #fff !important
+
+#title
+  display: block
+  font-size: 56px
+  font-family: Georgia, Times, 'Times New Roman', serif
+  font-weight: 400
+  line-height: 0.8
+  font-variant: small-caps
+  text-shadow: 2px 2px 4px $darkShadow
+  margin-left: 20px
+  margin-top: 10px
+
+#phone
+  display: block
+  font-size: 36px
+  font-style: italic
+  font-weight: bold
+  font-variant: small-caps
+  text-shadow: 2px 2px 4px $darkShadow
+  float: right
+
+#tagline
+  font-family: georgia
+  font-variant: small-caps
+  font-size: 1.4rem
+  text-shadow: 2px 2px 4px $lightShadow
+  margin-left: 20px
+
+.navbar
+  height: 92px  
+
+.noPad
+  padding-left: 0px
+  padding-right: 0px
+  text-align: center
+  &:hover
+    background-color: $orangeDark
+
+#footerMain
+  background-color: $black
+
+.footerDiv
+  color: $white
+  padding-top: 25px
+
+.footerDiv h4
+  font-size: 22px
+  margin-bottom: 10px  
+
+hr
+  color: $grey
+  border-top: 1px solid $grey
+  margin-top: 10px
+  margin-bottom: 10px
+
+.noMargin
+  margin: 0px  
+
+.footerTopBottom
+  margin-top: 50px
+  font-size: 14px 
+  padding-bottom: 25px   
+
+.floatRight
+  float: right  
