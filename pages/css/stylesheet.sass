@@ -23,21 +23,62 @@ body
 h1 
 	color : rgba(200,225,125, 1)
 
-a
-	color : $yellowLink
+a 
+  color : $yellowLink
+  text-decoration: none
+  &:hover
+    color : $orange
+    text-decoration: none 
 
-a:active 	
-	color : $yellowLink
+.contentText
+  color : $black !important
+  text-decoration: none !important
+  margin: 5px
+  &:hover
+    color : $orange !important
+    text-decoration: none !important 
+  &a  
+    color: $black
 
-a:visited
-	color : $yellowLink
+.white a 
+  color: $white 
+  font-size: 16px
+  &:hover
+    color: $orange 
 
-a:hover
-	color : $yellowLink
+.white 
+  color: $white 
+
+.orange
+  background-color: $orange !important
+
+.orangeText
+  color: $orange  
+
+.dropdown-item:hover
+  color: $white !important
+  background-color: $orangeDark !important  
+
+.navFontBig
+  font-weight: bold
+  line-height: 22px 
+  font-size: 14px !important
+  &:hover
+    color: $white !important
+
+.navFontSmall
+  font-size: 10px  
+  &:hover
+    color: $white !important  
 
 img
 	max-width : 100% 
 
+img-mobile
+  height: 90px
+  width: 70px  
+  margin-left: -5px
+  
 .fa 
   margin-right: 5px  
 
@@ -46,6 +87,17 @@ img
 
 .spacing
   margin-top: 20px 
+
+#mainContent
+  background-color: $white  
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .2)
+  padding-top: 25px
+  padding-left: 25px
+  padding-bottom: 600px
+  margin-bottom: 50px
+
+.mycontent-left 
+  border-right: 1px solid $lightShadow;
 
 #mobile-landguide
   background-color: $green     
@@ -58,11 +110,8 @@ img
 
 #topHeaderImage
   background-image: url(../static/mountain-river-view-boots.jpg)
+  background-size: cover
   color: $white
-
-.dropdown-item:hover
-  color: $white !important
-  background-color: $orangeDark !important
 
 #navbarMain a  
   color: #fff !important
@@ -97,22 +146,12 @@ img
 .navbar
   height: 92px  
 
-.navFontBig
-  font-weight: bold
-  line-height: 22px 
-  font-size: 14px !important
-
-.navFontSmall
-  font-size: 10px  
-
 .noPad
   padding-left: 0px
   padding-right: 0px
-  // margin-top: 10px 
-  // margin-bottom: 5px
-  // margin-left: 5px
-  // margin-right: 5px
   text-align: center
+  &:hover
+    background-color: $orangeDark
 
 #footerMain
   background-color: $black
@@ -124,19 +163,6 @@ img
 .footerDiv h4
   font-size: 22px
   margin-bottom: 10px  
-
-.white a 
-  color: $white !important 
-  font-size: 16px
-
-.white 
-  color: $white !important 
-
-.orange
-  background-color: $orange !important
-
-#returnWhite
-  color: #fff !important  
 
 hr
   color: $grey

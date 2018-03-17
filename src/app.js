@@ -27,12 +27,6 @@ module.exports = () =>
 
 	}));
 
-	// app.use(require('connect-pug-static')(
-	// {
-	// 	src : pjoin(__dirname, '../pages'),
-	// 	dest : '../volatile',
-	// }));
-
 	// Routes
 	require("./routes.js")(app);
 
