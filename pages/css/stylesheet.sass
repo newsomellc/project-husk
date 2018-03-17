@@ -1,6 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap"
 @import "../../node_modules/font-awesome/scss/font-awesome.scss"
 
+$tab-min : 768px
+$tab-max : 1000px
+
 $white : #ffffff
 $black : #000000
 $background : #f7f7f7
@@ -79,6 +82,10 @@ a
   font-size: 10px  
   &:hover
     color: $white !important  
+
+@media (min-width: $tab-min) and (max-width: $tab-max)
+  .container
+    max-width: 97.5%
 
 img
 	max-width : 100% 
