@@ -9,8 +9,8 @@ module.exports = () =>
 {
 	let app = Express();
 	app.disable('x-powered-by');
-	//app.set('view engine', 'pug');
-	//app.set('views', pjoin(__dirname, '..', 'pages'));
+	app.set('view engine', 'pug');
+	app.set('views', pjoin(__dirname, '..', 'pages'));
 
 	app.use('/', Express.static(pjoin(__dirname, '..', 'pages'), {redirect: false}));
 
@@ -27,11 +27,8 @@ module.exports = () =>
 
 	}));
 
-	app.use(require('connect-pug-static')(
-	{
-		src : pjoin(__dirname, '../pages'),
-		dest : '../volatile',
-	}));
+	// Routes
+	require("./routes.js")(app);
 
 	/** +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 	 * Error handler.
@@ -62,10 +59,13 @@ module.exports = () =>
 				ctx.stack = false;
 
 		res.status(code);
-		if (req.path.match(/.*(js|css)$/))
+		if (req.path.match(/.*(js|css)$/)){
 			res.json(ctx);
-		else
+		}
+		else{
+			console.log(res.json(ctx))
 			res.render('error', Object.assign(req.ctx, ctx));
+		}
 	});
 
 	return app;
