@@ -1,18 +1,243 @@
 extends templates/_layout
 
 block append page-params
-	-
-		title='Example Main Page';
-
-
-block header
-	h1=title
-	img(Src='/static/mountain-view.jpg')
+	
+	link(rel='stylesheet', href='./css/bootstrap.css')
+	link(rel='stylesheet', href='./css/stylesheet.css')
+	link(rel='stylesheet', href='./css/bootstrap-social.css')
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 
 block content
-	p Replace me with real content.
-	p: a(href='/subpage.html') Here's a sub-page.
-	P: a(href='/subpage-path/') Here's a sub-page built another way.
+					
+	div(class="container border")
+		div(class="row")
+			div(class="col-sm-5")
+				div(class='row  first-row')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/sm1.jpg')
+					div(class='col cstm-txt')
+						a(href='#' class='text-dark')
+							p Beautiful Tennessee Mountain Homesite Next to a Waterfall
+				div(class='row first-row')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/sm2.jpg')
+					div(class='col cstm-txt')
+						a(href='#' class='text-dark')
+							p A Spectacular 50 Acres of Land For Sale in Tennessee
+				div(class='row first_row')
+					div(class='col first_col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/sm3.jpg')
+					div(class='col cstm-txt')
+						a(href='#' class='text-dark')
+							p 1,000+ Acres For Sale With Incredible Views and Creeks
+
+			div(class="col-sm cstm-txt2 left-border marginl")
+				a(href='#' class='text-dark')
+					img(src='http://localhost:3000/static/jasperAdSmall.jpg')
+				p A beautiful gated mountain community with spacious mountain homesites, river views, waterfalls, creeks, and trails - <strong> <a class=text-dark href="#">Jasper Highlands</a> </strong>
+			div(class="col-sm behind")
+					input(placeholder='First Name')
+					input(placeholder='E-mail')
+					br
+					br
+					div
+						button(class='button btn-secondary') ORDER
+
+		div(class="row")
+			div(class='col-sm-9')
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') Tennessee Land for Sale With Incredible Sunset...
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg1.jpg')
+						p(class='cstm-txt2') This incredible, and very private 40 acres features a variety of natural mountain features and would make a great … <a class=text-warning font-weight-bold href="#">[Read More...]</a>
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') Over 180 Acres Of Tennessee Mountain Land With...
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg2.jpg')
+						p(class='cstm-txt2') This large acreage Tennessee mountain property has it all. Incredible sunsets, deep forest, rolling pasture, and unique rock … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') The Perfect Land for a Hunting Lodge or Cabin Retreat
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg3.jpg')
+						p(class='cstm-txt2') This incredible, and very private 40 acres features a variety of natural mountain features and would make a great … <a class=text-warning href="#">[Read More...]</a>
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') 313 Acre Hunting or Horse Property
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg4.jpg')
+						p(class='cstm-txt2') This 313 (+/-) acre section of Tennessee mountain property has it all. The southern and much of the western … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') Tennessee Mountain Land With Lots of Privacy…
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg5.jpg')
+						p(class='cstm-txt2') This Tennessee mountain land for sale is for those looking for privacy and plenty of space around the home site. One has … <a class=text-warning href="#">[Read More...]</a>
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt3') Homesite With Back Door Wooded Privacy, Creek, and Meadows…
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/lg6.jpg')
+						p(class='cstm-txt2') This Jasper Highlands homesite has a bit of a slope from the road back to a really nice meandering … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						div(class='row')
+							div(class='col')
+								a(href='#' class='text-dark')
+									img(src='http://localhost:3000/static/sq1.jpg')
+							div(class='col')
+								a(href='#' class='text-dark')
+									p(class='cstm-txt7') 80+ Acres of Mountain Property With Beautiful Valley...
+					div(class='col')
+						div(class='row')
+							div(class='col')
+								a(href='#' class='text-dark')
+									img(src='http://localhost:3000/static/sq2.jpg')
+							div(class='col')
+								a(href='#' class='text-dark')
+									p(class='cstm-txt7') 420 Acres With Mountain Views, Creeks, and Wooded Privacy
+				div(class='row top-border')
+					div(class='col')
+						div(class='row')
+							div(class='col')
+								a(href='#' class='text-dark')
+									img(src='http://localhost:3000/static/sq3.jpg')
+							div(class='col')
+								a(href='#' class='text-dark')
+									p(class='cstm-txt7') 2-Acre Dockable Tellico Lake…
+					div(class='col')
+						div(class='row')
+							div(class='col')
+								a(href='#' class='text-dark')
+									img(src='http://localhost:3000/static/sq4.jpg')
+							div(class='col')
+								a(href='#' class='text-dark')
+									p(class='cstm-txt7') Secluded Tennessee Mountain Acreage with Views and Wooded Privacy
+				div(class='top-pad')
+					a(href='#')
+						img(src='http://localhost:3000/static/jasperAd.jpg')
+
+			div(class='col left-border')
+				p(class='cstm-txt4') TN Land offers beautiful Tennessee land for sale with majestic views, creeks and waterfalls! Most of our land and acreage for sale are large mountain tracts and home sites located near Chattanooga and Sewanee Tennessee. These properties offer great country living without being too far away… Also <strong>Tennessee has no state income tax and low property taxes!</strong>
+				a(href='#')
+					img(src='http://localhost:3000/static/land-guide-ad.jpg' width=245)
+				p(class='cstm-txt4') LATEST FROM THE FENCE POST
+				a(href='#' class='text-dark')
+					img(src='http://localhost:3000/static/fence1.jpg' width=245)
+				a(href='#' class='text-dark')
+					p(class='cstm-txt5') A Successful Spring at Jasper Highlands
+				p(class='cstm-txt6') The Spring season at Jasper Highlands has started with a bang! Folks from all around the country have chosen to visit … <a class=text-warning href="#">[Read More...]</a>
+				a(href='#' class='text-dark')
+					img(src='http://localhost:3000/static/fence2.jpg' width=245)
+				a(href='#' class='text-dark')
+					p(class='cstm-txt5') Jasper Highlands Fire Department Gets Best Rating In Marion County
+				p(class='cstm-txt6') Local / Chattanooga Times Free Press One of the region's newest volunteer fire departments has achieved the best fire … <a class=text-warning href="#">[Read More...]</a>
+				p(class='csvtm-txt4') MOST RECENT LAND
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/rec1.jpg')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt5') Over 6 Acres With Wooded Privacy And Creek
+				p(class='cstm-txt6') The views from this bluff front … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/rec2.jpg')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt5') Bluff Front Homesite With Beautiful Views And Rock Formations
+				p(class='cstm-txt6') Scenic sunsets can be enjoyed from this … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/rec3.jpg')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt5') Level Mountain Homesite With Rock Formations and Scenic Long Range Views
+				p(class='cstm-txt6') The views from this bluff front … <a class=text-warning href="#">[Read More...]</a>
+				div(class='row top-border')
+					div(class='col')
+						a(href='#' class='text-dark')
+							img(src='http://localhost:3000/static/rec4.jpg')
+					div(class='col')
+						a(href='#' class='text-dark')
+							p(class='cstm-txt5') Scenic Mountain Homesite With Incredible Bluff Views
+					p(class='cstm-txt6') Located on the western bluff of the … <a class=text-warning href="#">[Read More...]</a>
+
+							
+	<br >
+	div(class='container-fluid foot')
+		<br >
+		div(class='row')
+			div(class='col fcol')
+				p(class='ftitle') TN LAND
+				a(href='#' class='text-white')
+					p(class='flink') Order Your FREE Guide To Tennessee's Most Affordable Land!
+				a(href='#' class='text-white')
+					p(class='flink') About TNLand.com
+				a(href='#' class='text-white')
+					p(class='flink') Contact TNLand.com
+				a(href='#' class='text-white')
+					p(class='flink') TNLand.com's Privacy Policy
+				a(href='#' class='text-white')
+					p(class='flink') A Beautiful Gated Mountain Community in Southeast Tennessee
+				
+			div(class='col fcol text-white')
+				p(class='ftitle') LAND FEATURES
+				a(href='#' font-size='30% !important' class='text-white') Acreage 
+				a(href='#' font-size='30px' class='text-white') Bluff 
+				a(href='#' class='text-white') Brow Property 
+				a(href='#' class='text-white') Creek 
+				a(href='#' class='text-white') Horse Property 
+				a(href='#' class='text-white') Hunting Land 
+				a(href='#' class='text-white') Mountain Views 
+				a(href='#' class='text-white') on sale 
+				a(href='#' class='text-white') Pasture 
+				a(href='#' class='text-white') Brow Property 
+				a(href='#' class='text-white') Land 
+				a(href='#' class='text-white') Privacy 
+				a(href='#' class='text-white') Rock Formations 
+				a(href='#' class='text-white') Sold 
+				a(href='#' class='text-white') Video 
+				a(href='#' class='text-white') Waterfront 
+				a(href='#' class='text-white') Wooded Land 
+
+			div(class='col fcol')
+				p(class='ftitle') SHARE THIS PAGE
+				a(class="btn btn-social-icon btn-twitter")
+					span(class="fa fa-twitter")
+				a(class="btn btn-social-icon btn-facebook")
+					span(class="fa fa-facebook")
+				a(class="btn btn-social-icon btn-instagram")
+					span(class="fa fa-instagram")
+				a(class="btn btn-social-icon btn-youtube")
+					span(class="fa fa-youtube")
+				<br >
+				<br >
+				p(class=('ftitle')) STAY IN TOUCH
+
+				a(class="btn btn-social-icon btn-twitter")
+					span(class="fa fa-twitter")
+				a(class="btn btn-social-icon btn-facebook")
+					span(class="fa fa-facebook")
+				a(class="btn btn-social-icon btn-instagram")
+					span(class="fa fa-instagram")
+				a(class="btn btn-social-icon btn-youtube")
+					span(class="fa fa-youtube")
+
+
+
+
 
 block footer
-	//-remove a block from an extending template entirely by declaring it, and then giving it no content
+	script 

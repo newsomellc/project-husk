@@ -1,7 +1,7 @@
 //-This is where all the main layout for the page goes.
 block page-params
 	-
-		var title='Default page title';
+		var title='Tennessee Land For Sale at TN Land';
 
 html
 	head
@@ -9,12 +9,37 @@ html
 			title=title
 
 		block styles
-			link(rel='stylesheet' href='/css/stylesheet.css')
+			link(rel='stylesheet', href='./css/bootstrap.css')
+			link(rel='stylesheet', href='./css/stylesheet.css')
+			link(rel='stylesheet', href='./css/bootstrap-social.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 	body
 		block body
-			block header
-				header
-					h1 Default page header
+			div(class='container-fluid' id='bg')
+				div(class='container cont-main')
+					block header
+						div(class= 'header' id='id')
+							div(class='container' id='title')
+								div(class='row row1')
+									div(class='col mcol')
+										a(href='#' class='text-white')
+											h1 TNLand.com
+									div(class='col')
+										h2 1-888-777-5758
+								h5 Tennessee Land, Lots of Acreage For Sale
+							div(class='row' id='menu')
+								div(class='col mycol sprow')
+									button(type="button" class="btn btn-block btn-warning") FREE Land Guide #[p(class='sml-txt') Prices, Listings & More...]
+								div(class='col mycol sprow')
+									button(type="button" class="btn btn-block btn-warning") Tennessee Land #[p(class='sml-txt') More Land and Acreage]
+								div(class='col mycol sprow')
+									button(type="button" class="btn btn-block btn-warning") Land Specials #[p(class='sml-txt') Featured Land on Sale]
+								div(class='col mycol sprow') 
+									button(type="button" class="btn btn-block btn-warning") Jasper Highlands #[p(class='sml-txt') The Mountain Community]
+								div(class='col mycol sprow')
+									button(type="button" class="btn btn-block btn-warning") The Fence Post #[p(class='sml-txt') Land News & How-To's]
+								div(class='col mycol sprow')
+									button(type="button" class="btn btn-block btn-warning") Contact Us #[p(class='sml-txt') Send us a message...]
 
 			block content
 				section
