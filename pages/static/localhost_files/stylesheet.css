@@ -1,0 +1,220 @@
+.container {
+
+  margin-bottom:0;
+  width:100%;
+  background-color:white;
+}
+
+.behind {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-image: url(http://localhost:3000/static/land-guide-short-formd.png);
+  background-size: 320px 250px;
+  padding-top:150px;
+  padding-right:70px;
+  text-align:left;
+}
+.cont-main {
+  border: 1px solid;
+  padding:0px
+}
+#title{
+  background-image: url(http://www.tnland.com/wp-content/themes/tnland1140/images/site-header/moutain-river-view-boots.jpg);
+  color:white;
+
+}
+
+.mcol {
+  padding-left:0px;
+  margin-left:0px;
+  vertical-align:bottom;
+  margin-bottom:-15px;
+
+}
+
+.rowl {
+  padding-left:0px;
+  margin-left:0px;
+}  
+h1 {
+  text-align:left;
+  font-size:50px;
+  padding-left:0px;
+  margin-left:0px;
+  vertical-align:bottom;
+
+}
+
+h2 {
+  text-align:right;
+  font-style:italic;
+  padding-left:0px;
+  margin-left:0px;
+}
+
+h5 {
+  font-family:'serif';
+  padding-left:0px;
+  margin-left:0px;
+  margin-bottom:0px;
+}
+
+.marginl {
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.left-border {
+  border-left-width:thin;
+  border-left: .25px solid;
+  margin-top: 10px;
+  padding-left:5px;
+  border-color:;
+  margin-bottom:10px;
+}
+
+.sprow {
+  margin:0px !important;
+  padding:0px !important;
+  box-sizing: border-box;
+}
+.top-border {
+  border-top: .5px solid;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.mycol{
+  
+  height:40px;
+  text-align:center;
+  font-size:15px;
+  color:black;
+  top-padding: 10px;
+  font-family:'serif';
+  font-variant:small-caps;
+  
+}
+
+.first-row {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+#bg {
+  /* background-image: url(http://www.tnland.com/wp-content/themes/tnland1140/images/site-bg/open-field.jpg); */
+  background-image: url(../static/bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.row {
+  text-align:center;
+  margin-right:0px;
+  margin-left:0px;
+
+}
+
+.id {
+  background-color:green;
+}
+ .ftitle {
+  text-align:left;
+  font-family:'serif';
+  font-size: 20px;
+ }
+
+.header {
+  font-family:'Times New Roman';
+  font-variant:small-caps;
+}
+
+.cstm-txt {
+  text-align:left;
+  font-weight:bold;
+  font-style:italic;
+  font-size:16px;
+  font-family:'georgia';
+  line-height:100%;
+  padding:10px 10px 10px 10px;
+}
+
+.cstm-txt2 {
+  text-align:left;
+  font-size:14px;
+  font-family:'georgia';
+  padding:10px 10px 10px 10px;
+}
+
+.cstm-txt3 {
+  font-style:italic;
+  text-align:left;
+  font-size:16px;
+  font-weight:bold;
+  font-family:'georgia';
+  padding:0px 10px 0px 0px;
+}
+
+.cstm-txt4 {
+  text-align:left;
+  font-size:13.5px;
+  font-family:'georgia';
+  padding:0px 10px 0px 0px;
+}
+
+.cstm-txt5 {
+  text-align:left;
+  font-size:14px;
+  font-weight:bold;
+  font-family:georgia;
+  font-style:italic;
+}
+
+.cstm-txt6 {
+  text-align:left;
+  font-size:14px;
+  font-family:georgia;
+}
+
+.cstm-txt7 {
+  text-align:left;
+  font-size:14px;
+  font-family:georgia;
+  font-weight:bold;
+}
+
+.foot {
+  background:black;
+  color:white;
+}
+
+.fcol {
+  margin-left:100px;
+  text-align:left;
+}
+
+.flink {
+  text-align:left;
+}
+
+.btn-social-icon {
+  margin:10px;
+  border:2px white;
+}
+
+
+
+@media (max-width: 768px) {
+  .btn {
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn {
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
